@@ -1,4 +1,5 @@
 import { useState } from "react"
+
 import { Fragment } from "react"
 
 export const Contador=()=>{
@@ -31,8 +32,10 @@ export const Contador=()=>{
             <tr>
                 <td colSpan={4}><input type="number" name="pantallaAbajo" id="pantallaAbajo" /></td>
             </tr>
+            <div class="container">
             <tr>
-               <td>
+                 
+              <td>
                <button type="button" onClick={borrar}>AC</button>
                 </td> 
                 <td> <button type="button" onClick={divison}>/</button> 
@@ -42,11 +45,14 @@ export const Contador=()=>{
                <td>
                <button type="button" onClick={siete}>7</button>
                 </td> 
-                <td> <button type="button" onClick={ocho}>8</button> 
+                <td> 
+                    <button type="button" onClick={ocho}>8</button> 
                 </td>
-                <td> <button type="button" onClick={nueve}>9</button> 
+                <td> 
+                    <button type="button" onClick={nueve}>9</button> 
                 </td>
-                <td> <button type="button" onClick={multiplicacion}>*</button> 
+                <td> 
+                    <button type="button" onClick={multiplicacion}>*</button> 
                 </td>
             </tr>
             <tr>
@@ -78,7 +84,7 @@ export const Contador=()=>{
                 <td> <button type="button" onClick={igual}>=</button> 
                 </td>
             </tr>
-             
+            </div>    
            
         </Fragment>
     )
