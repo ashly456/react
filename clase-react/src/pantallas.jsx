@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from "react";
 
-function Botones(props){
+function Pantalla(props){
     const[count, setCount]= useState(0);
 
     return(
 
         <div>
-            <button >{props.nombre}</button>
+           <input type="number" name="pantalla" id="pantalla"/>
         </div>
     )
 
 }
-export default Botones
+export default Pantalla
